@@ -7,19 +7,11 @@
 </head>
 <body>
 
-<div class="site-header">
-  <div class="wraqpper">
-    Site header
-  </div>
-</div>
+{% include 'site-header.njk' %}
 
 {{ content | safe }}
 
-<div class="site-footer">
-  <div class="wraqpper">
-    Site footer
-  </div>
-</div>
+{% include 'site-footer.njk' %}
 
 <script src="{{ rootPath }}assets/js/main.js"></script>
 </body>
