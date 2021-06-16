@@ -22,7 +22,9 @@
   },
   "dependencies": {
     "eleventy-plugin-sass": "^1.2.0",
-    "rimraf": "^3.0.2"
+    "rimraf": "^3.0.2",
+    "stylelint": "^13.13.1",
+    "stylelint-order": "^4.1.0"
   },
   "browserslist": [
     "last 4 versions"
