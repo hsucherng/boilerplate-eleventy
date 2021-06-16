@@ -1,8 +1,9 @@
 module.exports = {
   rootPath: (data) => {
-    return data.page.url
+    return data.page.filePathStem
       .split('/')
-      .reduce((a, b) => a+(b && '../'),)
+      .slice(2)
+      .map(() => '../')
   },
 
   /*
