@@ -1,5 +1,9 @@
-<div class="banner">
-  Banner here
+<div class="banners">
+  {% for banner in banners %}
+    <div class="banner">
+      {{ banner.heading }}
+    </div>
+  {% endfor %}
 </div>
 
 <div class="section">
