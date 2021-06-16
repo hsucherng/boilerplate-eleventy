@@ -1,4 +1,5 @@
 const pluginSass = require('eleventy-plugin-sass');
+const prettier = require('prettier');
 
 module.exports = function(eleventyConfig) {
   // Copy through
@@ -19,6 +20,14 @@ module.exports = function(eleventyConfig) {
     ],
     outputDir: './dist/assets/css/',
     cleanCSS: false
+  });
+
+  eleventyConfig.addTransform("html-prettier", function(content, outputPath) {
+    if(outputPath && outputPath.endsWith(".html")) {
+      return prettier.format(content, { parser: 'html' });
+    }
+
+    return content;
   });
 
   // Globals
