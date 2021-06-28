@@ -9,6 +9,7 @@
 //        &:-ms-input-placeholder { @content; }
 //            &::-moz-placeholder { @content; }
 //             &:-moz-placeholder { @content; }
+//                 &::placeholder { @content; }
 // }
 
 @mixin hidden-accessible() {
