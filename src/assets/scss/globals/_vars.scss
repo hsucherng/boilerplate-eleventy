@@ -17,17 +17,17 @@
 //  Organise colours as follows:
 //
 //      $grey: #aaa;
-//          $light-grey: #bbb;   <-- This must be lighter than $grey
-//          $light-grey-2: #ccc; <-- This must be lighter than $light-grey
-//          $light-grey-3: #ddd; <-- This must be lighter than $light-grey-2
-//          $dark-grey: #999;    <-- This must be darker than $grey
-//          $dark-grey-2: #888;  <-- This must be darker than $dark-grey
-//          $dark-grey-3: #777;  <-- This must be darker than $dark-grey-2
+//        $light-grey: #bbb;   <-- This must be lighter than $grey
+//        $light-grey-2: #ccc; <-- This must be lighter than $light-grey
+//        $light-grey-3: #ddd; <-- This must be lighter than $light-grey-2
+//        $dark-grey: #999;    <-- This must be darker than $grey
+//        $dark-grey-2: #888;  <-- This must be darker than $dark-grey
+//        $dark-grey-3: #777;  <-- This must be darker than $dark-grey-2
 //      $red: #f00;
-//          $light-red: #f99;   <-- This must be lighter than $red
-//          $dark-red: #a00;    <-- This must be darker than $red
+//        $light-red: #f99;   <-- This must be lighter than $red
+//        $dark-red: #a00;    <-- This must be darker than $red
 //      $white: #fff;
-//          $dark-white: #f00;   <-- This must be darker than $white
+//        $dark-white: #f00;   <-- This must be darker than $white
 //
 //  Elaboration:
 //
@@ -44,9 +44,9 @@
 //=============================================================================
 
 $black: #333;
-    $light-black: #999;
+  $light-black: #999;
 $white: #fff;
-    $dark-white: #f2f2f2;
+  $dark-white: #f2f2f2;
 
 //=============================================================================
 //  $ Easings

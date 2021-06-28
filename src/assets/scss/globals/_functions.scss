@@ -3,7 +3,7 @@
 //-----------------------------------------------------------------------------
 
 @function strip-unit($num) {
-    @return $num / ($num * 0 + 1);
+  @return $num / ($num * 0 + 1);
 }
 
 //---- Unit setters ----//
@@ -15,11 +15,11 @@
 //      px(30rem)   -► 30px
 //
 @function px($num) {
-    @if $num == 0 {
-        @return $num;
-    }
+  @if $num == 0 {
+    @return $num;
+  }
 
-    @return strip-unit($num) * 1px;
+  @return strip-unit($num) * 1px;
 }
 
 //
@@ -35,13 +35,13 @@
 //      perc(75%, 100px)    -► 75%
 //
 @function perc($num, $base: false) {
-    @if $base != false {
-        @return strip-unit($num) / strip-unit($base) * 100%;
-    } @else if $num == 0 {
-        @return $num;
-    } @else {
-        @return strip-unit($num) * 1%;
-    }
+  @if $base != false {
+    @return strip-unit($num) / strip-unit($base) * 100%;
+  } @else if $num == 0 {
+    @return $num;
+  } @else {
+    @return strip-unit($num) * 1%;
+  }
 }
 
 //
@@ -57,13 +57,13 @@
 //      vw(75%, 100px)  -► 75vw
 //
 @function vw($num, $base: false) {
-    @if $base != false {
-        @return strip-unit($num) / strip-unit($base) * 100vw;
-    } @else if $num == 0 {
-        @return $num;
-    } @else {
-        @return strip-unit($num) * 1vw;
-    }
+  @if $base != false {
+    @return strip-unit($num) / strip-unit($base) * 100vw;
+  } @else if $num == 0 {
+    @return $num;
+  } @else {
+    @return strip-unit($num) * 1vw;
+  }
 }
 
 //
@@ -79,13 +79,13 @@
 //      vh(75%, 100px)  -► 75vh
 //
 @function vh($num, $base: false) {
-    @if $base != false {
-        @return strip-unit($num) / strip-unit($base) * 100vh;
-    } @else if $num == 0 {
-        @return $num;
-    } @else {
-        @return strip-unit($num) * 1vh;
-    }
+  @if $base != false {
+    @return strip-unit($num) / strip-unit($base) * 100vh;
+  } @else if $num == 0 {
+    @return $num;
+  } @else {
+    @return strip-unit($num) * 1vh;
+  }
 }
 
 //
@@ -101,11 +101,11 @@
 //      em(75%, 100px)  -► 75em
 //
 @function em($num, $base: false) {
-    @if $base != false {
-        @return strip-unit($num) / strip-unit($base) * 1em;
-    } @else if $num == 0 {
-        @return $num;
-    } @else {
-        @return strip-unit($num) * 1em;
-    }
+  @if $base != false {
+    @return strip-unit($num) / strip-unit($base) * 1em;
+  } @else if $num == 0 {
+    @return $num;
+  } @else {
+    @return strip-unit($num) * 1em;
+  }
 }
