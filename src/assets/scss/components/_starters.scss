@@ -7,8 +7,8 @@
 *,
 *:before,
 *:after {
-  transition: none $transition-duration $transition-easing;
   box-sizing: border-box;
+  transition: none $transition-duration $transition-easing;
 }
 
 html,
@@ -68,9 +68,9 @@ button {
   margin: 0;
   background: none;
   color: inherit;
+  font-family: inherit;
   font-size: inherit;
   line-height: inherit;
-  font-family: inherit;
   appearance: none;
 }
 
