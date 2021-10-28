@@ -95,77 +95,63 @@ $fw-black:      900;
 //  $ Media
 //-----------------------------------------------------------------------------
 //
-//  Glossary:
-//      - us = Ultra Small
-//      - xs = Extra Small
-//      - sm = Small
-//      - md = Medium
-//      - lg = Large
-//      - xl = Extra Large
-//      - ul = Ultra Large
-//      - bp = Breakpoint
-//      - dn = Down
-//
-//  So, `$bp-sm-dn` = `breakpoint-small-down`.
-//
 //  To use a single breakpoint variable:
 //
-//      @media ($bp-xs) { ... }
+//      @media ($breakpoint-1) { ... }
 //
 //  To use multiple breakpoint variables:
 //
-//      @media ($bp-xs) and ($bp-sm-dn) { ... }
+//      @media ($breakpoint-1) and ($breakpoint-2-down) { ... }
 //
 //  To use a breakpoint variable with a custom breakpoint:
 //
-//      @media ($bp-xs) and (min-height: 525px) { ... }
+//      @media ($breakpoint-1) and (min-height: 525px) { ... }
 //
 //=============================================================================
 
-$media-us-width: 320px;
-$media-xs-width: 480px;
-$media-sm-width: 640px;
-$media-md-width: 800px;
-$media-lg-width: 1024px;
-$media-xl-width: 1280px;
-$media-ul-width: 1440px;
+$media-width-1: 480px;
+$media-width-2: 640px;
+$media-width-3: 800px;
+$media-width-4: 1024px;
+$media-width-5: 1280px;
+$media-width-6: 1440px;
 
-$bp-xs: 'min-width: #{$media-xs-width}';
-$bp-sm: 'min-width: #{$media-sm-width}';
-$bp-md: 'min-width: #{$media-md-width}';
-$bp-lg: 'min-width: #{$media-lg-width}';
-$bp-xl: 'min-width: #{$media-xl-width}';
-$bp-ul: 'min-width: #{$media-ul-width}';
+$breakpoint-1: 'min-width: #{$media-width-1}';
+$breakpoint-2: 'min-width: #{$media-width-2}';
+$breakpoint-3: 'min-width: #{$media-width-3}';
+$breakpoint-4: 'min-width: #{$media-width-4}';
+$breakpoint-5: 'min-width: #{$media-width-5}';
+$breakpoint-6: 'min-width: #{$media-width-6}';
 
-$bp-xs-dn: 'max-width: #{$media-xs-width - 0.02}';
-$bp-sm-dn: 'max-width: #{$media-sm-width - 0.02}';
-$bp-md-dn: 'max-width: #{$media-md-width - 0.02}';
-$bp-lg-dn: 'max-width: #{$media-lg-width - 0.02}';
-$bp-xl-dn: 'max-width: #{$media-xl-width - 0.02}';
-$bp-ul-dn: 'max-width: #{$media-ul-width - 0.02}';
+$breakpoint-1-down: 'max-width: #{$media-width-1 - 0.02}';
+$breakpoint-2-down: 'max-width: #{$media-width-2 - 0.02}';
+$breakpoint-3-down: 'max-width: #{$media-width-3 - 0.02}';
+$breakpoint-4-down: 'max-width: #{$media-width-4 - 0.02}';
+$breakpoint-5-down: 'max-width: #{$media-width-5 - 0.02}';
+$breakpoint-6-down: 'max-width: #{$media-width-6 - 0.02}';
 
-$bp-xs-sm: '#{$bp-xs}) and (#{$bp-sm-dn}';
-$bp-xs-md: '#{$bp-xs}) and (#{$bp-md-dn}';
-$bp-xs-lg: '#{$bp-xs}) and (#{$bp-lg-dn}';
-$bp-xs-xl: '#{$bp-xs}) and (#{$bp-xl-dn}';
-$bp-xs-ul: '#{$bp-xs}) and (#{$bp-ul-dn}';
+$breakpoint-1-2: '#{$breakpoint-1}) and (#{$breakpoint-2-down}';
+$breakpoint-1-3: '#{$breakpoint-1}) and (#{$breakpoint-3-down}';
+$breakpoint-1-4: '#{$breakpoint-1}) and (#{$breakpoint-4-down}';
+$breakpoint-1-5: '#{$breakpoint-1}) and (#{$breakpoint-5-down}';
+$breakpoint-1-6: '#{$breakpoint-1}) and (#{$breakpoint-6-down}';
 
-$bp-sm-md: '#{$bp-sm}) and (#{$bp-md-dn}';
-$bp-sm-lg: '#{$bp-sm}) and (#{$bp-lg-dn}';
-$bp-sm-xl: '#{$bp-sm}) and (#{$bp-xl-dn}';
-$bp-sm-ul: '#{$bp-sm}) and (#{$bp-ul-dn}';
+$breakpoint-2-3: '#{$breakpoint-2}) and (#{$breakpoint-3-down}';
+$breakpoint-2-4: '#{$breakpoint-2}) and (#{$breakpoint-4-down}';
+$breakpoint-2-5: '#{$breakpoint-2}) and (#{$breakpoint-5-down}';
+$breakpoint-2-6: '#{$breakpoint-2}) and (#{$breakpoint-6-down}';
 
-$bp-md-lg: '#{$bp-md}) and (#{$bp-lg-dn}';
-$bp-md-xl: '#{$bp-md}) and (#{$bp-xl-dn}';
-$bp-md-ul: '#{$bp-md}) and (#{$bp-ul-dn}';
+$breakpoint-3-4: '#{$breakpoint-3}) and (#{$breakpoint-4-down}';
+$breakpoint-3-5: '#{$breakpoint-3}) and (#{$breakpoint-5-down}';
+$breakpoint-3-6: '#{$breakpoint-3}) and (#{$breakpoint-6-down}';
 
-$bp-lg-xl: '#{$bp-lg}) and (#{$bp-xl-dn}';
-$bp-lg-ul: '#{$bp-lg}) and (#{$bp-ul-dn}';
+$breakpoint-4-5: '#{$breakpoint-4}) and (#{$breakpoint-5-down}';
+$breakpoint-4-6: '#{$breakpoint-4}) and (#{$breakpoint-6-down}';
 
-$bp-xl-ul: '#{$bp-xl}) and (#{$bp-ul-dn}';
+$breakpoint-5-6: '#{$breakpoint-5}) and (#{$breakpoint-6-down}';
 
-$bp-desktop-nav: $bp-md;
-$bp-mobile-nav:  $bp-md-dn;
+$breakpoint-desktop-nav: $breakpoint-3;
+$breakpoint-mobile-nav:  $breakpoint-3-down;
 
 //=============================================================================
 //  $ Transitions
