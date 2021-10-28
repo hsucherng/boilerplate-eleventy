@@ -7,6 +7,10 @@ This project is built with Eleventy.
 1. Run `npm install` or any other preferred package manager (e.g. `yarn`, `pnpm install`) to install the project dependencies.
 2. Run `npm run serve` to serve the project up on `http://localhost:8080`.
 
+## Build
+
+Once ready for handover, stop the serve command and run `npm run build`, then handover the contents of the `dist` folder.
+
 ## Stylelint
 
 The project has been setup with some opinionated Stylelint config. Currently tested in VS Code with the stylelint extension --- requires opening the project folder as a Workspace.
@@ -14,6 +18,10 @@ The project has been setup with some opinionated Stylelint config. Currently tes
 ## Editorconfig
 
 The project has been setup with an opinionated Editorconfig. Currently tested in VS Code with the editroconfig extension --- _most likely_ requires opening the project folder as a Workspace.
+
+## Rollup
+
+The project has been setup with Rollup.js, so that we may separate our JS files into partials during development, but serve them up as a single JS file.
 
 ## Root Path
 
