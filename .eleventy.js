@@ -3,12 +3,11 @@ const prettier = require('prettier');
 
 module.exports = function(eleventyConfig) {
   // Copy through
-  eleventyConfig.addPassthroughCopy("./src/assets/images");
-  eleventyConfig.addPassthroughCopy("./src/assets/fonts");
+  eleventyConfig.addPassthroughCopy("./src/assets/!(js|scss)/**");
   eleventyConfig.addPassthroughCopy("./src/assets/js/vendors");
 
   // Watch targets
-  eleventyConfig.addWatchTarget("./src/assets/js");
+  eleventyConfig.addWatchTarget("./src/assets/**");
 
   // Template filters
   eleventyConfig.addFilter("json", (value) => JSON.stringify(value));
