@@ -239,6 +239,9 @@
     "no-eol-whitespace": true,
     "no-missing-end-of-source-newline": null,
 
+    "scss/double-slash-comment-whitespace-inside": null,
+    "scss/comment-no-empty": null,
+
     "order/properties-order": [
       "counter-reset",
       "counter-increment",
