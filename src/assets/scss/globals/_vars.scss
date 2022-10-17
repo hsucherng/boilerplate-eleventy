@@ -109,51 +109,34 @@ $fw-black:      900;
 //
 //=============================================================================
 
-$media-xxsmall-width: 320px;
-$media-xsmall-width: 480px;
-$media-small-width: 640px;
-$media-medium-width: 750px;
+// Base brackets
+$media-small-width: 480px;
+$media-medium-width: 640px;
+$media-2medium-width: 800px;
 $media-large-width: 1024px;
-$media-xlarge-width: 1280px;
-$media-xxlarge-width: 1440px;
+$media-2large-width: 1280px;
+$media-3large-width: 1440px;
 
-$bp-xxsmall: 'min-width: #{$media-xxsmall-width}';
-$bp-xsmall: 'min-width: #{$media-xsmall-width}';
+// Min-width breakpoints
 $bp-small: 'min-width: #{$media-small-width}';
 $bp-medium: 'min-width: #{$media-medium-width}';
+$bp-2medium: 'min-width: #{$media-2medium-width}';
 $bp-large: 'min-width: #{$media-large-width}';
-$bp-xlarge: 'min-width: #{$media-xlarge-width}';
-$bp-xxlarge: 'min-width: #{$media-xxlarge-width}';
+$bp-2large: 'min-width: #{$media-2large-width}';
+$bp-3large: 'min-width: #{$media-3large-width}';
 
-$bp-xsmall-down: 'max-width: #{$media-xsmall-width    - 0.02}';
-$bp-small-down: 'max-width: #{$media-small-width      - 0.02}';
-$bp-medium-down: 'max-width: #{$media-medium-width    - 0.02}';
-$bp-large-down: 'max-width: #{$media-large-width      - 0.02}';
-$bp-xlarge-down: 'max-width: #{$media-xlarge-width    - 0.02}';
-$bp-xxlarge-down: 'max-width: #{$media-xxlarge-width  - 0.02}';
+// Max width breakpoints
+$bp-small-down: 'max-width: #{$media-small-width - 0.02}';
+$bp-medium-down: 'max-width: #{$media-medium-width - 0.02}';
+$bp-2medium-down: 'max-width: #{$media-2medium-width - 0.02}';
+$bp-large-down: 'max-width: #{$media-large-width - 0.02}';
+$bp-2large-down: 'max-width: #{$media-2large-width - 0.02}';
+$bp-3large-down: 'max-width: #{$media-3large-width - 0.02}';
 
-$bp-xsmall-small: '#{$bp-xsmall}) and (#{$bp-small-down}';
-$bp-xsmall-medium: '#{$bp-xsmall}) and (#{$bp-medium-down}';
-$bp-xsmall-large: '#{$bp-xsmall}) and (#{$bp-large-down}';
-$bp-xsmall-xlarge: '#{$bp-xsmall}) and (#{$bp-xlarge-down}';
-$bp-xsmall-xxlarge: '#{$bp-xsmall}) and (#{$bp-xxlarge-down}';
+// Named breakpoints
+$bp-desktop-nav: $bp-2medium;
+$bp-mobile-nav: $bp-2medium-down;
 
-$bp-small-medium: '#{$bp-small}) and (#{$bp-medium-down}';
-$bp-small-large: '#{$bp-small}) and (#{$bp-large-down}';
-$bp-small-xlarge: '#{$bp-small}) and (#{$bp-xlarge-down}';
-$bp-small-xxlarge: '#{$bp-small}) and (#{$bp-xxlarge-down}';
-
-$bp-medium-large: '#{$bp-medium}) and (#{$bp-large-down}';
-$bp-medium-xlarge: '#{$bp-medium}) and (#{$bp-xlarge-down}';
-$bp-medium-xxlarge: '#{$bp-medium}) and (#{$bp-xxlarge-down}';
-
-$bp-large-xlarge: '#{$bp-large}) and (#{$bp-xlarge-down}';
-$bp-large-xxlarge: '#{$bp-large}) and (#{$bp-xxlarge-down}';
-
-$bp-xlarge-xxlarge: '#{$bp-xlarge}) and (#{$bp-xxlarge-down}';
-
-$bp-desktop-nav: $bp-medium;
-$bp-mobile-nav: $bp-medium-down;
 
 //=============================================================================
 //  $ Transitions
