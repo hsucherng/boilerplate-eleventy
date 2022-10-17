@@ -1,0 +1,45 @@
+//=============================================================================
+//  $ Media
+//-----------------------------------------------------------------------------
+//
+//  To use a single breakpoint variable:
+//
+//      @media ($bp-small) { ... }
+//
+//  To use multiple breakpoint variables:
+//
+//      @media ($bp-small) and ($bp-small-down) { ... }
+//
+//  To use a breakpoint variable with a custom breakpoint:
+//
+//      @media ($bp-small) and (min-height: 525px) { ... }
+//
+//=============================================================================
+
+// Base brackets
+$media-small-width: 480px;
+$media-medium-width: 640px;
+$media-2medium-width: 800px;
+$media-large-width: 1024px;
+$media-2large-width: 1280px;
+$media-3large-width: 1440px;
+
+// Min-width breakpoints
+$bp-small: 'min-width: #{$media-small-width}';
+$bp-medium: 'min-width: #{$media-medium-width}';
+$bp-2medium: 'min-width: #{$media-2medium-width}';
+$bp-large: 'min-width: #{$media-large-width}';
+$bp-2large: 'min-width: #{$media-2large-width}';
+$bp-3large: 'min-width: #{$media-3large-width}';
+
+// Max width breakpoints
+$bp-small-down: 'max-width: #{$media-small-width - 0.02}';
+$bp-medium-down: 'max-width: #{$media-medium-width - 0.02}';
+$bp-2medium-down: 'max-width: #{$media-2medium-width - 0.02}';
+$bp-large-down: 'max-width: #{$media-large-width - 0.02}';
+$bp-2large-down: 'max-width: #{$media-2large-width - 0.02}';
+$bp-3large-down: 'max-width: #{$media-3large-width - 0.02}';
+
+// Named breakpoints
+$bp-desktop-nav: $bp-2medium;
+$bp-mobile-nav: $bp-2medium-down;

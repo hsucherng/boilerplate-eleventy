@@ -4,9 +4,9 @@
 
 .wrapper {
   width: 100%;
-  max-width: $wrapper-width + $wrapper-gutter * 2;
-  padding-right: $wrapper-gutter;
-  padding-left: $wrapper-gutter;
+  max-width: calc(var(--wrapper-width) + var(--wrapper-gutter) * 2);
+  padding-right: var(--wrapper-gutter);
+  padding-left: var(--wrapper-gutter);
   margin-right: auto;
   margin-left: auto;
 }

@@ -8,7 +8,7 @@
 *:before,
 *:after {
   box-sizing: border-box;
-  transition: none $transition-duration $transition-easing;
+  transition: none var(--transition-duration) var(--transition-easing);
 }
 
 html,
@@ -16,12 +16,12 @@ button,
 input,
 select,
 textarea {
-  font: 100%/1.2 $ff-base;
+  font: 100%/1.2 var(--ff-base);
 }
 
 html {
-  background-color: $dark-white;
-  color: $black;
+  background-color: var(--dark-white);
+  color: var(--black);
 }
 
 body {
@@ -46,7 +46,7 @@ h3,
 h4,
 h5,
 h6 {
-  font: 1.25em/1.1 $ff-alpha;
+  font: 1.25em/1.1 var(--ff-heading);
 }
 
 a,

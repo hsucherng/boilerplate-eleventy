@@ -10,10 +10,10 @@
 
 @import 'globals/functions';
 @import 'globals/mixins';
-@import 'globals/vars';
 
 /*---- Low Priority Components ----*/
 
+@import 'components/css-variables';
 @import 'components/fonts';
 @import 'components/starters';
 
