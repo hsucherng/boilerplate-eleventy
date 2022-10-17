@@ -4,11 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "npx npm-run-all build:*",
-    "build:cleanup": "node cleanup",
+    "cleanup": "node cleanup",
+    "build": "npm-run-all cleanup build:rollup build:eleventy",
     "build:eleventy": "npx @11ty/eleventy",
     "build:rollup": "npx rollup ./src/assets/js/main.js --format iife --file ./dist/assets/js/main.js",
-    "serve": "npx npm-run-all --parallel serve:*",
+    "serve": "npm-run-all cleanup --parallel serve:rollup serve:eleventy",
     "serve:eleventy": "npx @11ty/eleventy --serve",
     "serve:rollup": "npx rollup ./src/assets/js/main.js --format iife --file ./dist/assets/js/main.js --watch"
   },
