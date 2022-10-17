@@ -28,6 +28,18 @@
 //   white-space: nowrap;
 // }
 
+// @mixin line-clamp($numberOfLines) {
+//   @if ($numberOfLines == 0) {
+//     display: block;
+//   } @else {
+//     display: -webkit-box;
+//     -webkit-box-orient: vertical;
+//     -webkit-line-clamp: $numberOfLines;
+//     line-clamp: $numberOfLines;
+//     overflow: hidden;
+//   }
+// }
+
 // @mixin scrollbars() {
 //   overflow: auto;
 //   -webkit-overflow-scrolling: touch;
