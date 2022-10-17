@@ -6,7 +6,7 @@
   "scripts": {
     "cleanup": "node cleanup",
     "build": "npm-run-all cleanup build:rollup build:eleventy",
-    "build:eleventy": "npx @11ty/eleventy",
+    "build:eleventy": "npx @11ty/eleventy -- --prettier",
     "build:rollup": "npx rollup ./src/assets/js/main.js --format iife --file ./dist/assets/js/main.js",
     "serve": "npm-run-all cleanup --parallel serve:rollup serve:eleventy",
     "serve:eleventy": "npx @11ty/eleventy --serve",

@@ -1,5 +1,6 @@
 const pluginSass = require('eleventy-plugin-sass');
 const prettier = require('prettier');
+const shouldUsePrettier = process.argv.includes('--prettier');
 
 module.exports = function(eleventyConfig) {
   // Copy through
@@ -21,13 +22,15 @@ module.exports = function(eleventyConfig) {
     cleanCSS: false
   });
 
-  eleventyConfig.addTransform("html-prettier", function(content, outputPath) {
-    if(outputPath && outputPath.endsWith(".html")) {
-      return prettier.format(content, { parser: 'html' });
-    }
+  if(shouldUsePrettier) {
+    eleventyConfig.addTransform("html-prettier", function(content, outputPath) {
+      if(outputPath && outputPath.endsWith(".html")) {
+        return prettier.format(content, { parser: 'html' });
+      }
 
-    return content;
-  });
+      return content;
+    });
+  }
 
   // Globals
   return {
