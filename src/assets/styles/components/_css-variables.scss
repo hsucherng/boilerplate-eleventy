@@ -1,0 +1,64 @@
+:root {
+  /*---- Colors ----*/
+
+  --black: #333;
+  --grey: #999;
+  --grey-light: #ccc;
+  --grey-light2: #f2f2f2;
+  --white: #fff;
+
+  /*---- Easings ----*/
+
+  --ease-out-power4: cubic-bezier(0.19, 1, 0.22, 1);             // Ease Out Expo
+  --ease-out-power3: cubic-bezier(0.165, 0.84, 0.44, 1);         // Ease Out Quart
+  --ease-out-power2: cubic-bezier(0.215, 0.61, 0.355, 1);        // Ease Out Cubic
+  --ease-out-power1: cubic-bezier(0.25, 0.46, 0.45, 0.94);       // Ease Out Quad
+  --ease-in-power4: cubic-bezier(0.95, 0.05, 0.795, 0.035);      // Ease In Expo
+  --ease-in-power3: cubic-bezier(0.895, 0.03, 0.685, 0.22);      // Ease In Quart
+  --ease-in-power2: cubic-bezier(0.55, 0.055, 0.675, 0.19);      // Ease In Cubic
+  --ease-in-power1: cubic-bezier(0.55, 0.085, 0.68, 0.53);       // Ease In Quad
+  --ease-in-out-power4: cubic-bezier(1, 0, 0, 1);                // Ease In Out Expo
+  --ease-in-out-power3: cubic-bezier(0.77, 0, 0.175, 1);         // Ease In Out Quart
+  --ease-in-out-power2: cubic-bezier(0.645, 0.045, 0.355, 1);    // Ease In Out Cubic
+  --ease-in-out-power1: cubic-bezier(0.455, 0.03, 0.515, 0.955); // Ease In Out Quad
+
+  /*---- Fonts ----*/
+
+  --ff-base: 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+  --ff-primary: 'Georgia', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif;
+
+  /*---- Spacing ----*/
+
+  --spacing-small5: 2px;
+  --spacing-small4: 4px;
+  --spacing-small3: 8px;
+  --spacing-small2: 12px;
+  --spacing-small: 16px;
+  --spacing-medium: 20px;
+  --spacing-large: 24px;
+  --spacing-large2: 28px;
+  --spacing-large3: 32px;
+  --spacing-large4: 36px;
+  --spacing-large5: 40px;
+  --spacing-large6: 48px;
+  --spacing-large7: 56px;
+  --spacing-large8: 64px;
+
+  /*---- Transitions ----*/
+
+  --transition-duration: 0.4s;
+  --transition-easing: var(--ease-out-power4);
+  --transition-timing: var(--transition-duration) var(--transition-easing);
+  --smooth-transition-duration: 0.6s;
+  --smooth-transition-easing: var(--ease-out-power1);
+  --smooth-transition-timing: var(--smooth-transition-duration) var(--smooth-transition-easing);
+
+  /*---- Content width ----*/
+
+  --max-content-width: 1000px;
+  --content-side-gutter: var(--spacing-medium);
+
+  /*---- Z-indices ----*/
+
+  --zi-header: 10;
+}

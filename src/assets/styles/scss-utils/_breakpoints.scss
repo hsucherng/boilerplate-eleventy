@@ -1,0 +1,44 @@
+$-small2-width: 480px;
+$-small-width: 640px;
+$-medium-width: 800px;
+$-large-width: 1024px;
+$-large2-width: 1280px;
+$-large3-width: 1440px;
+
+$small2: 'min-width: #{$-small2-width}';
+$small: 'min-width: #{$-small-width}';
+$medium: 'min-width: #{$-medium-width}';
+$large: 'min-width: #{$-large-width}';
+$large2: 'min-width: #{$-large2-width}';
+$large3: 'min-width: #{$-large3-width}';
+
+$small2-down: 'max-width: #{$-small2-width  - 0.1}';
+$small-down: 'max-width: #{$-small-width    - 0.1}';
+$medium-down: 'max-width: #{$-medium-width  - 0.1}';
+$large-down: 'max-width: #{$-large-width    - 0.1}';
+$large2-down: 'max-width: #{$-large2-width  - 0.1}';
+$large3-down: 'max-width: #{$-large3-width  - 0.1}';
+
+$small2-small: '#{$small2}) and (#{$small-down}';
+$small2-medium: '#{$small2}) and (#{$medium-down}';
+$small2-large: '#{$small2}) and (#{$large-down}';
+$small2-large2: '#{$small2}) and (#{$large2-down}';
+$small2-large3: '#{$small2}) and (#{$large3-down}';
+
+$small-medium: '#{$small}) and (#{$medium-down}';
+$small-large: '#{$small}) and (#{$large-down}';
+$small-large2: '#{$small}) and (#{$large2-down}';
+$small-large3: '#{$small}) and (#{$large3-down}';
+
+$medium-large: '#{$medium}) and (#{$large-down}';
+$medium-large2: '#{$medium}) and (#{$large2-down}';
+$medium-large3: '#{$medium}) and (#{$large3-down}';
+
+$large-large2: '#{$large}) and (#{$large2-down}';
+$large-large3: '#{$large}) and (#{$large3-down}';
+
+$large2-large3: '#{$large2}) and (#{$large3-down}';
+
+$mobile: $large-down;
+$tablet: '#{$small} and #{$large-down}';
+$desktop: $large;

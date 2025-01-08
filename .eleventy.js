@@ -1,4 +1,4 @@
-const pluginSass = require('eleventy-plugin-sass');
+const eleventySass = require('eleventy-sass');
 const prettier = require('prettier');
 const shouldUsePrettier = process.argv.includes('--prettier');
 
@@ -14,12 +14,12 @@ module.exports = function(eleventyConfig) {
   eleventyConfig.addFilter("json", (value) => JSON.stringify(value));
 
   // Plugins
-  eleventyConfig.addPlugin(pluginSass, {
-    watch: [
-      './src/assets/scss/**/*.scss'
-    ],
-    outputDir: './dist/assets/css/',
-    cleanCSS: false
+  eleventyConfig.addPlugin(eleventySass, {
+    compileOptions: {
+      permalink: function() {
+        return (data) => data.page.filePathStem.replace(/^\/scss\//, "/css/") + ".css";
+      }
+    },
   });
 
   if(shouldUsePrettier) {

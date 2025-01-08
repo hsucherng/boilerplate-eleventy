@@ -2,16 +2,6 @@
 //  Mixins
 //-----------------------------------------------------------------------------
 
-// @mixin placeholders() {
-//   /* autoprefixer: off */
-//   &::-webkit-input-placeholder { @content; }
-//       &::-ms-input-placeholder { @content; }
-//        &:-ms-input-placeholder { @content; }
-//            &::-moz-placeholder { @content; }
-//             &:-moz-placeholder { @content; }
-//                 &::placeholder { @content; }
-// }
-
 // @mixin hidden-accessible() {
 //   width: 0;
 //   height: 0;
@@ -38,9 +28,4 @@
 //     line-clamp: $numberOfLines;
 //     overflow: hidden;
 //   }
-// }
-
-// @mixin scrollbars() {
-//   overflow: auto;
-//   -webkit-overflow-scrolling: touch;
 // }

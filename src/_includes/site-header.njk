@@ -1,5 +1,17 @@
 <div class="site-header">
   <div class="wrapper">
     Site header
+
+    {% if nav %}
+      <ul>
+        {% for navItem in nav %}
+        <li>
+          <a href="{{ rootPath }}{{ navItem.url }}">
+            {{ navItem.label }}
+          </a>
+        </li>
+        {% endfor %}
+      </ul>
+    {% endif %}
   </div>
 </div>

@@ -1,0 +1,8 @@
+.wrapper {
+  width: 100%;
+  max-width: calc(var(--max-content-width) + var(--content-side-gutter) * 2);
+  padding-right: var(--content-side-gutter);
+  padding-left: var(--content-side-gutter);
+  margin-right: auto;
+  margin-left: auto;
+}

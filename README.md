@@ -1,11 +1,11 @@
 # Eleventy Project
 
-This project is built with Eleventy.
+This project is built with Eleventy. Installed with Node v18.13.0.
 
 ## Setup
 
 1. Run `npm install` or any other preferred package manager (e.g. `yarn`, `pnpm install`) to install the project dependencies.
-2. Run `npm run serve` to serve the project up on `http://localhost:8080`.
+2. Run `npm start` to serve the project up on `http://localhost:8080`.
 
 ## Build
 

@@ -1,14 +1,9 @@
-/*-----------------------------------------------------------------------------
-  $ Starters
-/*-----------------------------------------------------------------------------
-  Just some simple standardisation.
------------------------------------------------------------------------------*/
-
 *,
 *:before,
 *:after {
   box-sizing: border-box;
-  transition: none var(--transition-duration) var(--transition-easing);
+  transition: none var(--transition-timing);
+  transition-property: color, background-color, border-color, box-shadow, opacity, transform;
 }
 
 html,
@@ -20,7 +15,7 @@ textarea {
 }
 
 html {
-  background-color: var(--dark-white);
+  background-color: var(--grey-light2);
   color: var(--black);
 }
 
@@ -46,13 +41,7 @@ h3,
 h4,
 h5,
 h6 {
-  font: 1.25em/1.1 var(--ff-heading);
-}
-
-a,
-button,
-input {
-  transition-property: color, border-color, background-color, opacity;
+  font: 1.25em/1.1 var(--ff-primary);
 }
 
 a {
