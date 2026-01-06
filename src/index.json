@@ -1,12 +1,14 @@
 {
   "pageTitle": "Home",
 
-  "banners": [
+  "landingBanners": [
     {
-      "heading": "Test Banner 1"
+      "heading": "Test Banner 1 heading",
+      "description": "Test Banner 1 description"
     },
     {
-      "heading": "Test Banner 2"
+      "heading": "Test Banner 2 heading",
+      "description": "Test Banner 2 description"
     }
   ]
 }

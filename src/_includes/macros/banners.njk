@@ -1,0 +1,20 @@
+{#
+  items = [
+    {
+      heading: 'Text'
+      description: 'Text'
+    }
+  ]
+#}
+
+{% macro banners(items) %}
+<div class="banners">
+  {% for banner in items %}
+    <div class="banner">
+      {{ banner.heading }}
+
+      <p>{{ banner.description }}</p>
+    </div>
+  {% endfor %}
+</div>
+{% endmacro %}

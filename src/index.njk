@@ -1,10 +1,6 @@
-<div class="banners">
-  {% for banner in banners %}
-    <div class="banner">
-      {{ banner.heading }}
-    </div>
-  {% endfor %}
-</div>
+{% from "macros/banners.njk" import banners %}
+
+{{ banners(landingBanners) }}
 
 <div class="section">
   <div class="wrapper">
