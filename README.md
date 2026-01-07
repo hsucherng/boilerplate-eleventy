@@ -21,7 +21,9 @@ The project has been setup with an opinionated Editorconfig. Currently tested in
 
 ## Rollup
 
-The project has been setup with Rollup.js, so that we may separate our JS files into partials during development, but serve them up as a single JS file.
+The project has been setup with Rollup.js, so that we may separate our JS files into partials during development, but serve them up as a single `main.js` file.
+
+Should you require any third-party libraries and plugins, download their minified JS files and place them into the `assets/js/` folder, then add in the `<script>` tag into the `_layouts/base.njk` file. Make sure it is placed above the `main.js`. Do not load the library as a partial into the `main.js`.
 
 ## Root Path
 
